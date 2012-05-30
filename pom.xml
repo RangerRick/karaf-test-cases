@@ -13,6 +13,9 @@
   <modules>
     <module>01-basic-bundle</module>
     <module>02-bundle-with-dependency</module>
+    <module>03-bundle-with-runtime-dependency</module>
+    <module>04-bundle-with-provided-dependency</module>
+    <module>05-bundle-with-feature-dependency</module>
   </modules>
 
   <build>
@@ -20,6 +23,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
+        <version>2.5</version>
         <configuration>
           <source>1.6</source>
           <target>1.6</target>
