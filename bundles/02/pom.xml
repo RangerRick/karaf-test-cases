@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <parent>
+    <groupId>com.example</groupId>
+    <artifactId>test</artifactId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.example.test.bundles</groupId>
+  <artifactId>com.example.test.execthing</artifactId>
+
+  <properties>
+    <bundle.symbolicName>com.example.test.execthing</bundle.symbolicName>
+    <bundle.namespace>com.example.test.execthing</bundle.namespace>
+  </properties>
+
+  <name>Example :: Test :: Executing Thing</name>
+  <description>An example test implementation.</description>
+
+  <packaging>bundle</packaging>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.example.test.bundles</groupId>
+      <artifactId>com.example.test.api</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.example.test.features</groupId>
+      <artifactId>feature-01</artifactId>
+      <version>${project.version}</version>
+      <type>pom</type>
+    </dependency>
+  </dependencies>
+
+</project>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<features xmlns="http://karaf.apache.org/xmlns/features/v1.0.0" name="com.example.test.runtime">
-    <feature description="Example :: Test :: Runtime" version="1.0-SNAPSHOT" name="com.example.test.runtime">
-        <details>An example test API, with a runtime dependency.</details>
-        <bundle>mvn:${project.groupId}/${project.artifactId}/${project.version}</bundle>
-        <bundle>wrap:mvn:org.apache.commons/commons-exec/1.1</bundle>
-    </feature>
-</features>
