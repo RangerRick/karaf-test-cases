@@ -29,6 +29,7 @@
               <goal>features-generate-descriptor</goal>
             </goals>
             <configuration>
+              <inputFile>src/main/features/features.xml.in</inputFile>
               <aggregateFeatures>true</aggregateFeatures>
             </configuration>
           </execution>
@@ -42,6 +43,12 @@
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-exec</artifactId>
       <version>1.1</version>
+    </dependency>
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>servlet-api</artifactId>
+      <version>2.5</version>
+      <scope>provided</scope>
     </dependency>
   </dependencies>
 
